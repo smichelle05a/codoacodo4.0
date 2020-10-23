@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <title>Vue</title>
+</head>
+<body class="m-3">
+    <header>
+        <h1>
+            Vue.js
+        </h1>
+    </header>
+    <!-- contenedor vue -->
+    <div id="app">
+        <div class="my-5">
+            <p>Diferencia entre v-model y v-bind</p>
+            <input type="text" v-bind:value="valorBind"/>
+            <p>El valor es el mismo y depende del asignado en la variable: {{valorBind}}</p>
+            <input type="text" v-model="valorModel"/>
+            <p>Es bidireccional: {{valorModel}} </p>
+            <a v-bind:href="link">
+                Ver documentación de {{nombreLink}}
+            </a>
+        </div>
+        <div class="my-5">
+            <h2 v-if="nombre">
+                Hola, {{nombre}}
+            </h2>
+            <h3 v-else="">
+                Escriba su nombre
+            </h3>
+            <input class="form-control" type="text" v-model="nombre"/>
+        </div>
+        <div class="my-5">
+            <p v-for="tecnologia in tecnologias">
+                {{tecnologia}}
+            </p>
+        </div>
+        <ol>
+            <li v-for="elemento in tecnologias">
+                {{elemento}}
+            </li>
+        </ol>
+    </div>
+    <div id="formVue">
+        <form class="my-5" v-on:submit.prevent="guardarTarea">
+            <h2>Lista de Tareas:</h2>
+            <input type="text" v-model="nuevaTarea"/>
+            <input type="submit" class="btn btn-outline-dark" value="Agregar"/>
+            <ol>
+                <li v-for="tarea in tareas">
+                    {{tarea}}
+                </li>
+            </ol>
+        </form>
+    </div>
+</body>
+<!-- vue (va antes que el js) -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js">
+</script>
+<!-- js -->
+<script src="./script/main.js">
+</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en Bootstrap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="font-family: 'Comfortaa', cursive;">
+    <div class="container-fluid">
+        <h1 class="text-center">
+            Actividad obligatoria: Formulario con Bootstrap
+        </h1>
+        <div class="container d-flex justify-content-center bg-light p-3" style="width: 60%;">
+            <div class="form-row">
+                <div class="col-6 form-group">
+                    <label for="nombre"> Nombre de pila</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="col-6 form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido">
+                </div>
+                <div class="form-group col-12">
+                    <label for="username">Nombre de usuario</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <label for="email">Correo electrónico <span class="text-muted">(opcional)</span></label>
+                    <input type="email" class="form-control" id="mail" placeholder="you@example.com">
+                </div>
+                <div class="form-group col-12">
+                    <label for="inputAddress">Habla a</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group col-12">
+                    <label for="inputAddress2">Dirección 2 <span class="text-muted">(opcional)</span></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento o suite">
+                </div>
+                <div class="col-5">
+                    <label for="pais">País</label>
+                    <select class="custom-select mr-sm-2" id="pais">
+                        <option selected>Escoger...</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                    </select>
+                </div>
+                <div class="col-5">
+                    <label for="estado">Estado</label>
+                    <select class="custom-select mr-sm-2" id="estado">
+                        <option selected>Escoger...</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <label for="CP">Código Postal</label>
+                    <input type="text" class="form-control" id="CP">
+                </div>
+                <hr class="border border-secondary col-12"/>
+                <div class="form-group col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="facturacion">
+                      <label class="form-check-label" for="facturacion">
+                        La dirección de envío es la misma que mi dirección de facturación
+                      </label>
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="guardar_info">
+                      <label class="form-check-label" for="guardar_info">
+                        Guarde esta información para la próxima vez
+                      </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
