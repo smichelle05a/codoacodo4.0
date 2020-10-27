@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/clase_1_css.css">
+    <link rel="stylesheet" href="../css/clases_css.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="icon" href=".././img/favicon.ico"/>
     <title>CSS</title>
@@ -65,7 +65,7 @@
             </ul>
         </div>
     </nav>
-    <main class="container  mt-3 mb-5">
+    <main class="container mt-3 mb-5">
         <header class="text-center display-4">
             <h1>Clases de CSS</h1>
         </header>
@@ -398,8 +398,263 @@
                 </section>
             </section>
         </section>
+        <hr class="border border-white"/>
         <section>
             <h1 class="text-center"><u>Selectores Avanzados</u></h1>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Similique</strong> quaerat optio enim eligendi voluptas hic ullam quibusdam, porro totam repellendus vel earum inventore nam beatae praesentium obcaecati temporibus dolore necessitatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <i><strong>Ullam</strong>  qui non illo corporis</i> mollitia doloribus, placeat possimus atque! Nihil eos sed doloribus doloremque eligendi rem atque ipsam maiores eius minima?</p>
+            </section>
+            <hr/>
+            <section>
+                <div>
+                    <h2>Título</h2>
+                    <p>Hermano adyacente</p>
+                    <p>Párrafo 2</p>
+                    <p>Párrafo 3</p>
+                </div>
+            </section>
+            <section>
+                <div class="hermano-gral">
+                    <h2>Título</h2>
+                    <p>Párrafo 1</p>
+                    <p>Párrafo 2</p>
+                    <p>Párrafo 3</p>
+                </div>
+            </section>
+            <hr/>
+            <section>
+                <h2 class="text-center">Selector de Atributo</h2>
+                <div>
+                    <p>Por nombre del atributo</p>
+                    <img alt="imagen-aleatoria" src="https://picsum.photos/200"/>
+                </div>
+                <br/>
+                <div>
+                    <p>Por valor del atributo</p>
+                    <img alt="imagen-aleatoria2" src="https://picsum.photos/200"/>
+                </div>
+                <br/>
+                <div>
+                    <p>En base a una sub-cadena dentro del valor de un atributo</p>
+                    <div><img alt="cadena-uno" src="https://picsum.photos/200"/></div>
+                    <br/>
+                    <div><img alt="cadena-dos" src="https://picsum.photos/200"/></div>
+                    <br/>
+                    <div><img alt="cadena-tres-verde" src="https://picsum.photos/200"/></div>
+                    <br/>
+                    <div><img alt="cadena-cuatro-verde" src="https://picsum.photos/200"/></div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h5 class="text-center"><u>Pseudoclases</u></h5>
+            <section>
+                <div>
+                    <p>first-child</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>last-child</p>
+                </div>
+            </section>
+            <section>
+                <h5 class="text-center"><u>nth-child()</u></h5>
+                <div class="bg-light">
+                    <ul>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                        <li>Lorem impsum</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="text-center">
+                <h5 class="text-center"><u>Pseudoclases para enlaces</u></h5>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </section>
+            <hr/>
+            <section>
+                <h5 class="text-center"><u>Pseudoelementos</u></h5>
+                <div>
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eos maiores in facere, et culpa, ut impedit deserunt perferendis natus totam ab iste quod dolorum quae rerum numquam tempora harum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo soluta qui, ex cupiditate asperiores laborum quasi aperiam. Facilis perferendis ducimus voluptate corrupti repudiandae sequi voluptatem amet modi deleniti exercitationem!
+                    </blockquote>
+                </div>
+            </section>  
+        </section>
+        <hr class="border border-white"/>
+        <section>
+            <h1 class="text-center">Dados con Flexbox</h1>
+            <section class="ejercicio-dados">
+                <div class="dado-1">
+                    <div class="punto"></div>
+                </div>
+                <div class="dado-2">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+                <div class="dado-3">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+                <div class="dado-4">
+                    <div class="columna">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+                    <div class="columna">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+                </div>
+                <div class="dado-5">
+                    <div class="columna">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+                    <div class="punto"></div>
+                    <div class="columna">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+                </div>
+                <div class="dado-6">
+                    <div class="columna">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+                    <div class="columna">
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                        <div class="punto"></div>
+                    </div>
+            </section>
+        </section>
+        <section>
+            <h1 class="text-center">Ejercicio 2 con Flexbox</h1>
+            <div class="flex-container-1">
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+                <div class="flex-item-1">1</div>
+            </div>
+        </section>
+        <hr class="border border-white"/>
+        <section>
+            <h1 class="titulo-animado text-center"><u>Animaciones con CSS (título animado)</u></h1>
+            <section>
+                <div id="transicion">
+                </div>
+                <div class="flex-container-3">
+                    <button class="button-3">
+                        click me
+                    </button>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-center">Animaciones</h2>
+                <section>
+                    <p>imagen animada</p>
+                    <div>
+                        <img src="../img/mundo.png" alt="imagen" class="imagen-mundo">
+                    </div>
+                </section>
+                <p>div animado</p>
+                <div id="div-animado">
+                </div>
+            </section>
+        </section>
+        <hr class="border border-white"/>
+        <section class="responsive">
+            <h1 class="text-center"><u>Responsive</u></h1>
+        </section>
+        <hr class="border border-white"/>
+        <section>
+            <h1 class="text-center"><u>CSS Grid</u></h1>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+                <div class="grid-item">11</div>
+                <div class="grid-item">12</div>
+            </div>
+        </section>
+        <hr class="border border-white"/>
+        <section class="ejemplo-css-grid">
+            <h1 class="text-center"><u>Ejemplo CSS Grid</u></h1>
+            <div class="grid-container-1">
+                <div class="grid-item-1">
+                    <img src="https://picsum.photos/200" alt="imagen aleatoria" class="grid-img">
+                    <div>
+                        <h2>Name</h2>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis dolor dignissimos repudiandae quod. Dolore, suscipit expedita impedit alias minus esse numquam praesentium! Sed sint quam nesciunt odio esse cumque.</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <img src="https://picsum.photos/200" alt="imagen aleatoria" class="grid-img">
+                    <div>
+                        <h2>Name</h2>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis dolor dignissimos repudiandae quod. Dolore, suscipit expedita impedit alias minus esse numquam praesentium! Sed sint quam nesciunt odio esse cumque.</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <img src="https://picsum.photos/200" alt="imagen aleatoria" class="grid-img">
+                    <div>
+                        <h2>Name</h2>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis dolor dignissimos repudiandae quod. Dolore, suscipit expedita impedit alias minus esse numquam praesentium! Sed sint quam nesciunt odio esse cumque.</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <img src="https://picsum.photos/200" alt="imagen aleatoria" class="grid-img">
+                    <div>
+                        <h2>Name</h2>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis dolor dignissimos repudiandae quod. Dolore, suscipit expedita impedit alias minus esse numquam praesentium! Sed sint quam nesciunt odio esse cumque.</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <img src="https://picsum.photos/200" alt="imagen aleatoria" class="grid-img">
+                    <div>
+                        <h2>Name</h2>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis dolor dignissimos repudiandae quod. Dolore, suscipit expedita impedit alias minus esse numquam praesentium! Sed sint quam nesciunt odio esse cumque.</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <img src="https://picsum.photos/200" alt="imagen aleatoria" class="grid-img">
+                    <div>
+                        <h2>Name</h2>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis dolor dignissimos repudiandae quod. Dolore, suscipit expedita impedit alias minus esse numquam praesentium! Sed sint quam nesciunt odio esse cumque.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="container-fluid text-center navbar-light bg-light footer p-2 mt-auto">
