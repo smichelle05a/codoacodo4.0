@@ -1,0 +1,335 @@
+/*Esto es un comentario*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Solid&display=swap');
+/*Selector universal*/
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+/*selector de etiqueta no se suele usar, es preferible usar clases o id*/
+.css-h2 {
+    color: green;
+    font-family: 'Acme', sans-serif;
+}
+
+/*selector de clase*/
+.rojo {
+    color: red;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: 'Alata', sans-serif;
+}
+
+/*selector de id*/
+#subtitulo {
+    background-color: rgba(215, 211, 78, 0.5); /*el último valor es para la transparencia...va de 0 a 1; para hexadecimal se puede usar opacity: ""*/
+    
+}
+
+.italic {
+    font-style: italic;
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+.p2 {
+    font-size: 2em;
+}
+
+.p3 {
+    font-size: 1.5rem;
+}
+
+.header{
+    background-color: #a36bff;
+}
+.section{
+    background-color: #ffa36b;
+}
+.article{
+    background-color: #ff6b7d;
+}
+.footer2{
+    background-color: #78dbbc;
+}
+
+/*propiedades de texto*/
+.titulo-h1 {
+    letter-spacing: 2px; /*acepta medidas absolutas, relativas y flexibles*/
+    text-align: center; /*left, right, justify*/
+    text-shadow: 10px 10px red;
+}
+
+.parrafo1 {
+    word-spacing: 5px;
+}
+
+.parrafo2 {
+    text-transform: uppercase; /*lowercase, capitalize*/
+}
+
+.titulo-h3 {
+    text-decoration: underline; /* overline, overline underline, line-through*/
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+}
+
+.titulo-h4 {
+    
+}
+
+/*bordes*/
+
+.table2 {
+    border: 2px solid black; /* double, dotted*/
+}
+.td {
+    border-left: 1px dotted red;
+    border-right: 1px solid green;
+    border-bottom: 1px double blue;
+    border-top: 1px solid pink;
+}
+
+.button2 {
+    border-radius: 25px;
+    border: 1px solid blue;
+    color: black;
+}
+
+.lista-ordenada li{
+    list-style-type: upper-roman;
+}
+
+.lista-desordenada li {
+    list-style-type: circle; /*square, disc, none*/
+}
+
+.actividad-section{
+    background-color: rgba(224, 224, 224, 0.5);
+    color: black;
+}
+
+.actividad-h1 {
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    color: black;
+}
+
+.actividad-h2 {
+    font-family: 'Indie Flower', cursive;
+    color: black;
+}
+
+.actividad-input {
+    border-radius: 25px;
+    border: none;
+}
+
+.actividad-footer {
+    text-align: center;
+}
+
+.modelo-de-caja {
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ---------- Box Model ------- */
+.margin {
+    background-color: #31B082;
+    width: 200px;
+    height: 150px;
+    /* margin: 10px;  top | bottom | left | right 
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 25px; 
+    margin: 15px 20px 5px; top | left y right | bottom
+    margin: 25px 5px;  top y bottom | left y right */
+    margin: 5px 2px 20px 40px; /* top | right | bottom | left */
+    color: white;
+}
+.padding {
+    background-color: #319FB0;
+    width: 200px;
+    height: 150px;
+    /* padding: 50px;
+    padding-bottom: 55px;
+    padding-right: 2px;
+    padding-left: 10px;
+    padding-top: 20px; */
+    padding: 20px 10px 10px 20px;
+    color: white;
+
+}
+.border-caja {
+    background-color: #4231B0;
+    width: 200px;
+    height: 150px;
+    border: 5px dotted black;
+    color: white;
+}
+.box-model {
+    background-color: #8231B0;
+    width: 200px;
+    height: 150px;
+    margin: 30px;
+    padding: 50px;
+    border: 10px solid black;
+    color: white;
+}
+.box-sizing {
+    background-color: #B0319E;
+    width: 200px;
+    height: 150px;
+    margin: 30px;
+    padding: 50px;
+    border: 10px solid black;
+    color: white;
+}
+
+/*-----Unidades Absolutas-----*/
+.cm {
+    font-size: 2cm;
+}
+.mm{
+    font-size: 5mm;
+}
+.px{
+    font-size: 16px;
+}
+.pt{
+    font-size: 10pt;
+}
+.in{
+    font-size: 1in;
+}
+.pc{
+    font-size: 1pc;
+}
+
+/*-----Unidades Relativas-----*/
+
+.em{
+    font-size: 1.1em; /*----- 24px (medida del padre o del último más cercano) + 10%-----*/
+}
+.padre-em{
+    font-size: 24px;
+}
+.rem{
+    font-size: 1.6rem;/*----- medida del elemento html + 60%-----*/
+}
+.clase-img {
+	width: 30vw;
+	height: 30vh;
+}
+
+.clase-padre1{
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+}
+
+.clase-relative{
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    position: relative; /**/
+    top: 50px;
+    left: 30px;
+    right: 45px;
+}
+
+.clase-absolute{
+    background-color: tomato;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 60px; /*las coordenadas las toma desde el ancestro más cercano que tenga una posición, si ninguno tiene, se pega al body*/
+    right: 60px;
+}
+
+.clase-fixed{
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    position: fixed; /*las coordenadas las toma desde lo que se ve del navegador*/
+    bottom: 50px;
+    right: 20px;
+}
+
+.clase-sticky{
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    position: sticky;
+    top: 20px;
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: row; /*row es el default, row reverse, posiciona del lado contrario (de derecha a izquierda), se puede hacer con column y queda posicionado de arriba hacia abajo y column-reverse, de abajo hacia arriba*/
+    width: 80vw;
+    height: 50vh;
+    background-color: plum;
+    justify-content: space-around; /* alinea los elementos en el eje principal (main axis)*/
+    align-items: stretch;
+}
+
+.flex-item1{
+    background-color: orange;
+    width: 10vw;
+    height: 15vh;
+}
+
+.flex-item2{
+    background-color: tomato;
+    width: 10vw;
+    height: 15vh;
+}
+
+.flex-item3{
+    align-items: flex-start;
+}
+
+.section-flexbox {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+.menu-flexbox-header{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.menu-flexbox-ul{
+    list-style-type: none;
+    display: flex;
+    align-self: flex-start;
+}
+
+.menu-flexbox-ul li{
+    margin: 0.5em;
+}
+
+.menu-flexbox-a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: .5em;
+}
+
+.menu-flexbox-img{
+    border-radius: 50%;
+}

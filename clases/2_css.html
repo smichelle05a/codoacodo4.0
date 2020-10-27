@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/clase_1_css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="icon" href=".././img/favicon.ico"/>
+    <title>CSS</title>
+</head>
+<body class="css-bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a href="#" class="navbar-brand"><i class="fas fa-laptop-code"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./1_html.html">HTML</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="./2_css.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./3_bootstrap.html" class="nav-link">Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./4_javascript.html" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./5_vue.html" class="nav-link">Vue</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./6_git_scrum.html" class="nav-link">Git/Scrum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./7_base_de_datos.html" class="nav-link">Base de Datos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./8_java_y_spring.html" class="nav-link">Java y Spring</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Actividades Obligatorias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../actividades_obligatorias/1_css.html">CSS</a>
+                        <a class="dropdown-item" href="../actividades_obligatorias/2_bootstrap_cards.html">Bootstrap Cards</a>
+                        <a class="dropdown-item" href="../actividades_obligatorias/3_bootstrap_formulario.html">Bootstrap Formulario</a>
+                        <a class="dropdown-item" href="../actividades_obligatorias/4_javascript_variables.html">JavaScript Variables</a>
+                        <a class="dropdown-item" href="../actividades_obligatorias/5_javascript_bucles.html">Javascript Bucles</a>
+                        <a class="dropdown-item" href="../actividades_obligatorias/6_javascript_login.html">Javascript Login</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="https://smichelle05a.github.io/portfolio/" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container  mt-3 mb-5">
+        <header class="text-center display-4">
+            <h1>Clases de CSS</h1>
+        </header>
+        <hr class="border border-white"/>
+        <h1 class="text-center"><u>Usos de CSS</u></h1>
+        <section>
+            <h2 id="subtitulo" class="css-h2">Subtítulo</h2>
+            <div>
+                <p class="italic">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero rerum dolorem quas quis hic, asperiores porro placeat mollitia iure at delectus maxime magni consectetur vitae provident laborum non laboriosam explicabo!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error recusandae inventore, sit quis ullam quibusdam aliquid ipsum mollitia ut. Et hic recusandae dolore possimus nobis. Et labore ipsa quae ullam?
+                </p>
+                <p class="rojo">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio at aliquam nobis molestiae iste illo fugit, labore unde sed necessitatibus cumque voluptatibus culpa distinctio repellat animi est, sunt quae! Alias!
+                </p>
+                <p class="p1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem quos dolor quo quibusdam tenetur? Porro quasi, minus repellat distinctio omnis corrupti dolores similique aspernatur. Corporis voluptates laudantium obcaecati atque?
+                </p>
+                <p class="p2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi quam. Iusto dolor aut animi ducimus, suscipit deleniti saepe temporibus provident? Ipsa natus consectetur adipisci, quod ipsam omnis tempore eligendi?
+                </p>
+                <p class="p3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam numquam blanditiis repudiandae facere, maxime minima assumenda repellendus nihil asperiores libero voluptatibus nisi dolores aliquid tempore. Asperiores vitae fugit officiis.
+                </p>
+            </div>
+        </section>
+        <hr class="border border-white"/>
+        <section class="section">
+            <section>
+                <header class="header">
+                    <h1 class="titulo-h1"><u>Propiedades del texto</u></h1>
+                </header>
+                <div>
+                    <h2>Subtítulo</h2>
+                    <p class="parrafo1">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda consectetur cupiditate facere accusantium hic, velit iure fugit sit vel repudiandae itaque dolorem nihil, cumque rerum modi? Aspernatur nisi nemo assumenda!
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3 class="titulo-h3">Subtítulo 2</h3>
+                    <p class="parrafo2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit doloribus cumque voluptatibus ipsam dignissimos non at, laborum officia eligendi alias amet modi similique dolorem cupiditate, error, nihil architecto quidem?
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h4 class="titulo-h4">Subtítulo 3</h4>
+                </div>
+            </section>
+            <article>
+                <span>
+                    <img src="https://picsum.photos/200" alt="Imagen aleatoria">
+                    <img src="https://picsum.photos/200" alt="Imagen aleatoria">
+                    <img src="https://picsum.photos/200" alt="Imagen aleatoria">
+                    <img src="https://picsum.photos/200" alt="Imagen aleatoria">
+                </span>
+            </article>
+            <section>
+                <table class="table2">
+                    <tr>
+                        <th>Color</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td class="td">Rojo</td>
+                        <td class="td"td>#FF0000</td>
+                    </tr>
+                    <tr>
+                        <td class="td"td>Azul</td>
+                        <td class="td"td>#0000ff</td>
+                    </tr>
+                </table>
+            </section>
+            <br/>
+            <br/>
+            <button class="button2">Enviar</button>
+            <section>
+                <ol class="lista-ordenada">
+                    <li>Uno</li>
+                    <li>Dos</li>
+                    <li>Tres</li>
+                    <li>Cuatro</li>
+                    <li>Cinco</li>
+                </ol>
+                <ul class="lista-desordenada">
+                    <li>Uno</li>
+                    <li>Dos</li>
+                    <li>Tres</li>
+                    <li>Cuatro</li>
+                    <li>Cinco</li>
+                </ul>
+            </section>
+            <footer class="footer2">
+                <span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum maxime adipisci, magni temporibus deleniti recusandae magnam expedita? Aliquid, quam fuga. At laboriosam quis natus in, rerum tempora temporibus vel!
+                    </p>
+                </span>
+            </footer>
+        </section>
+        <hr class="border border-white"/>
+        <section class="actividad-section">
+            <!-- Instrucciones:
+        1) Crear archivo externo para los estilos.
+        2) Colocar las etiquetas semánticas que correspondan.
+        3) Agregar un background color: #E0E0E0 que tenga 0.5 de opacidad.
+        4) Usar fuentes de Google Fonts.
+        5) Centrar el titulo principal.
+        6) Hacer que la barra de navegación nos lleve a cada parte de la página que corresponda.
+        8) Agregar los types correspondientes a cada input.
+        9) agregarle estilos a los inputs.
+        10) pie de pagina centrado.
+        11) cerrar bien las etiquetas simples, ej: <link />, <meta />, <img />
+        -->
+        <header id=inicio>
+            <nav>
+                <a href="#inicio">
+                    Home
+                </a>
+                <a href="#about">
+                    About
+                </a>
+                <a href="#register">
+                    Register
+                </a>
+            </nav>
+            <h1 class="actividad-h1">Welcome!</h1>
+        </header>
+        <div class="container">
+            <div id="about">
+                <h2 class="actividad-h2">
+                    About Us
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <img src="https://picsum.photos/500/370" alt="Imagen Aleatoria"/>
+            </div>
+            <div id="register">
+                <form>
+                    <h2 class="actividad-h2">
+                        Register
+                    </h2>
+                    <br/>
+                    <label>
+                        Name:
+                        <input id="name" class="actividad-input" name="name" placeholder="Ingrese su nombre" required="" type="text"/>
+                    </label>
+                    <label>
+                        Last Name:
+                        <input id="lastname" class="actividad-input" name="lastiname" placeholder="Ingrese su apellido" required="" type="text"/>
+                    </label>
+                    <label>
+                        Phone:
+                        <input id="phone" class="actividad-input" name="phone" placeholder="Ingrese su teléfono" required="" type="number"/>
+                    </label>
+                    <label>
+                        Mail:
+                        <input id="mail" class="actividad-input" name="mail" placeholder="Ingrese su correo" required="" type="email"/>
+                    </label>
+                    <label>
+                        Password:
+                        <input id="password" class="actividad-input" name="password" placeholder="Ingrese su contraseña" required="" type="password"/>
+                    </label>
+                    <input id="submit" class="actividad-input" type="submit" value="Sign In"/>
+                </form>
+            </div>
+            <footer class="actividad-footer">
+                <p>
+                    Copyright © all rights reserved.
+                </p>
+            </footer>
+        </div>
+        </section>
+        <hr class="border border-white"/>
+        <section>
+            <h1 class="text-center"><u>Modelo de Caja</u></h1>
+            <section class="modelo-de-caja">
+                <div class="margin">
+                    <h2>
+                        Margin
+                    </h2>
+                </div>
+                <div class="padding">
+                    <h2>
+                        Padding
+                    </h2>
+                </div>
+                <div class="border-caja">
+                    <h2>
+                        Border
+                    </h2>
+                </div>
+                <div class="box-model">
+                    <h2>
+                        Box Model
+                    </h2>
+                </div>
+                <div class="box-sizing">
+                    <h2>
+                        Box Sizing
+                    </h2>
+                </div>
+            </section>
+        </section>
+        <hr class="border border-white"/>
+        <section>
+            <h1 class="text-center"><u>Unidades de Medida</u></h1>
+            <section>
+                <h2>
+                    Unidades Absolutas
+                </h2>
+                <p class="cm">
+                    centímetros
+                </p>
+                <p class="mm">
+                    milímetros
+                </p>
+                <p class="px">
+                    pixeles
+                </p>
+                <p class="pt">
+                    puntos
+                </p>
+                <p class="in">
+                    pulgadas
+                </p>
+                <p class="pc">
+                    picas
+                </p>
+            </section>
+            <section class="padre-em">
+                <h2>
+                    Unidades Relativas
+                </h2>
+                <p class="em">
+                    em
+                </p>
+            </section>
+            <section>
+                <p class="rem">
+                    rem
+                </p>
+            </section>
+            <section>
+                <h2>
+                    Unidades Flexibles
+                </h2>
+                <img alt="vh/vw" src="https://picsum.photos/200"/>
+            </section>
+            <hr class="border border-white"/>
+            <section>
+                <h1 class="text-center" id="flexbox"><u>Flexbox</u></h1>
+                <section>
+                    <div class="flex-container2">
+                        <div class="flex-item1">
+                            1
+                        </div>
+                        <div class="flex-item2">
+                            2
+                        </div>
+                        <div class="flex-item1">
+                            3
+                        </div>
+                        <div class="flex-item2">
+                            4
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="flex-container2">
+                            <img class="flex-item3" src="https://picsum.photos/200" alt="aa">
+                    </div>
+                </section>
+            </section>
+            <hr class="border border-white"/>
+            <section class="section-flexbox">
+                <h1 class="text-center"><u>Menú con Flexbox</u></h1>
+                <header class="menu-flexbox-header">
+                    <img class="menu-flexbox-img" src="http:/lorempixel.com/120/120" alt="aleatoria">
+                    <ul class="menu-flexbox-ul">
+                        <li>
+                            <a href="../index.html" class="menu-flexbox-a">Volver al inicio |</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-flexbox-a">Clase 8</a>
+                        </li>
+                        <li>
+                            <a href="#flexbox" class="menu-flexbox-a">Flexbox</a>
+                        </li>
+                        <li>
+                            <a href="#position" class="menu-flexbox-a">Position</a>
+                        </li>
+                    </ul>
+                </header>
+            </section>
+            <hr class="border border-white"/>
+            <section class="position-relative">
+                <h1 class="text-center"><u>Position</u></h1>
+                <section>
+                    <div class="clase-padre">
+                        <div class="clase-relative">
+                            <p>Relative</p>
+                        </div>
+                    </div>
+                    <div class="clase-padre">
+                        <div class="clase-absolute">
+                            <p>Absolute</p>
+                        </div>
+                    </div>
+                    <div class="clase-padre">
+                        <div class="clase-fixed">
+                            <p>Fixed</p>
+                        </div>
+                    </div>
+                    <div class="clase-padre">
+                        <div class="clase-sticky">
+                            <p>Sticky</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h1 class="text-center"><u>Selectores Avanzados</u></h1>
+        </section>
+    </main>
+    <footer class="container-fluid text-center navbar-light bg-light footer p-2 mt-auto">
+        <span>
+            <a  class="text-muted" href="https://icons8.com" target="_blank">Some icons are from Icons8</a>
+        </span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

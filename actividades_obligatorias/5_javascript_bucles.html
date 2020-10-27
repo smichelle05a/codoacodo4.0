@@ -3,28 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Javascript - Bucles</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="icon" href="../img/favicon.ico"/>
+    <title>Actividad Obligatoria: JavaScript Bucles</title>
 </head>
-<body style="font-family: 'Comfortaa', cursive;">
-    <div class="container-fluid">
-        <header>
-            <h1 class="text-center">Actividad Obligatoria: Javascript - Bucles</h1>
+<body class="js-bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="navbar-brand"><i class="fas fa-laptop-code"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../clases/1_html.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/2_css.html" class="nav-link">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/3_bootstrap.html" class="nav-link">Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/4_javascript.html" class="nav-link">Javascript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/5_vue.html" class="nav-link">Vue</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/6_git_scrum.html" class="nav-link">Git/Scrum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/7_base_de_datos.html" class="nav-link">Base de Datos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../clases/8_java_y_spring.html" class="nav-link">Java y Spring</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://smichelle05a.github.io/portfolio/" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Actividades Obligatorias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./1_css.html">CSS</a>
+                        <a class="dropdown-item" href="./2_bootstrap_cards.html">Bootstrap Cards</a>
+                        <a class="dropdown-item" href="./3_bootstrap_formulario.html">Bootstrap Formulario</a>
+                        <a class="dropdown-item" href="./4_javascript_variables.html">JavaScript Variables</a>
+                        <a class="dropdown-item" href="./5_javascript_bucles.html">Javascript Bucles</a>
+                        <a class="dropdown-item" href="./6_javascript_login.html">Javascript Login</a>
+                    </div>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <header class="text-center display-4">
+            <h1>Actividad Obligatoria: JavaScript Bucles</h1>
         </header>
-    </div>
+    </main>
+    <footer class="container-fluid text-center navbar-light bg-light footer p-2">
+        <span>
+            <a  class="text-muted" href="https://icons8.com" target="_blank">Some icons are from Icons8</a>
+        </span>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script>
-        for (i=11;i>=9;i--){
-            document.write("<div class=\"container text-center\"><br><b>La tabla del " +i+ ":</b><br></div>")
-            for (j=1;j<10;j++) {
-                document.write("<div class=\"container text-center\">" +i+ " x " + j + ":   ")
-                document.write(i*j)
-                document.write("<br></div>")
-                
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            document.write("<div class=\"d-flex flex-row mt-5\">");
+            for (i=11;i>=9;i--){
+                document.write("<div class=\"d-flex flex-column col-4\">");
+                document.write("<div class=\"container text-center\">");
+                document.write("<p class=\"font-weight-bold\">La tabla del " +i+ ":</p>");
+                for (j=1;j<10;j++) {
+                    document.write("<p> " +i+ " x " + j + ":   " +i*j+ "</p>");
+                }
+                document.write("</div>");
+                document.write("</div>");
             }
-        }
-    </script>
+            document.write("</div>");
+        </script>
 </body>
 </html>
