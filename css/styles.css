@@ -58,3 +58,11 @@ body {
     position: fixed;
     bottom: 0px;
 }
+
+#stop-hand:focus {
+    outline: none;
+}
+
+#stop-hand:hover {
+    cursor: pointer;
+}
