@@ -112,6 +112,83 @@
                 </ol>
             </form>
         </div>
+        <div id="app2">
+            <div class="my-5">
+                <p>
+                    Otra forma de escribir v-bind:
+                </p>
+                <input :value="valor" type="text"/>
+                <input type="text" v-bind:value="valor"/>
+                <p>
+                    Otra forma de escribir v-on
+                </p>
+                <input @click="enviar" class="btn btn-dark" type="submit"/>
+                <input class="btn btn-dark" type="submit" v-on:click="enviar"/>
+                <button class="btn btn-outline-dark" v-on:click="masUno">
+                    {{ contador }}
+                </button>
+            </div>
+            <div class="my-5">
+                <h3>
+                    Computed
+                </h3>
+                <input type="number" v-model.number="num1"/>
+                <input type="number" v-model.number="num2"/>
+                <!-- nos devuelve un string así que hay que usar un modificador, para convertirlo en tipo númerico usamos v-model.number -->
+                <p>
+                    Resultado {{multiplicar}}
+                </p>
+            </div>
+            <div class="m-3">
+                <label>
+                    Ancho
+                    <input type="range" v-model="ancho"/>
+                </label>
+                <label>
+                    Alto
+                    <input type="range" v-model="alto"/>
+                </label>
+                <img :src="linkCompleto" class="d-block"/>
+                <p>
+                    {{linkCompleto}}
+                </p>
+            </div>
+            <etiqueta-vue titulo="Hola Mundo">
+            </etiqueta-vue>
+            <etiqueta-vue titulo="Otro titulo">
+            </etiqueta-vue>
+            <etiqueta-vue titulo="Otro">
+            </etiqueta-vue>
+            <etiqueta-vue>
+            </etiqueta-vue>
+        </div>
+        <div id="bgColorChange" v-bind:class="colorElemento">
+            <div class="my-4">
+                <button class="btn btn-info" v-on:click="cambiarColor('info')">
+                    Celeste
+                </button>
+                <button @click="cambiarColor('danger')" class="btn btn-danger">
+                    Rojo
+                </button>
+                <button @click="cambiarColor('success')" class="btn btn-success">
+                    Verde
+                </button>
+                <button @click="cambiarColor('warning')" class="btn btn-warning">
+                    Amarillo
+                </button>
+                <button @click="cambiarColor('dark')" class="btn btn-dark">
+                    Negro
+                </button>
+                <button @click="cambiarColor('primary')" class="btn btn-primary">
+                    Azul
+                </button>
+            </div>
+            <div>
+                <h2>
+                    Elegí un color
+                </h2>
+            </div>
+        </div>
     </main>
     <footer class="container-fluid text-center navbar-light bg-light footer p-2">
         <span>

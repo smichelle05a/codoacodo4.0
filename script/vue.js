@@ -29,7 +29,7 @@ new Vue ({
 })
 
 /*
-	Acá van los componentes
+Acá van los componentes
 */
 Vue.component("etiqueta-vue", { // recibe dos argumentos: el nombre del componente y el objeto con las propiedades
 	props: ["titulo"],  // lo que definimos acá lo vamos a poder usar como atributo en html
@@ -45,8 +45,8 @@ Vue.component("etiqueta-vue", { // recibe dos argumentos: el nombre del componen
 				`, // acá va el código html como string y solo tiene que tener un elemento raiz
 })
 
-let app = new Vue ({
-	el: "#app",
+new Vue ({
+	el: "#app2",
 	data: {
 		valor: 1,
 		contador: 1,
@@ -71,5 +71,17 @@ let app = new Vue ({
 		linkCompleto() {
 			return `${this.link}/${this.ancho*10}/${this.alto*10}`
 		}
+	}
+})
+
+new Vue ({
+	el: "#bgColorChange",
+	data: {
+		colorElemento: "",
+	},
+	methods: {
+		cambiarColor: function(color) {
+			this.colorElemento = "bg-" + color;
+		},
 	}
 })
