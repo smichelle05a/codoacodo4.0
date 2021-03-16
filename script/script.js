@@ -1034,3 +1034,4 @@ let colores2 = {
 for(const prop in colores2) {
   console.log(`El color ${prop} es ${colores2[prop]}`);
 }
+

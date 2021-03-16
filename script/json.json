@@ -1,0 +1,10 @@
+{
+    "listaUsuarios": {
+        "usuario": {
+            "Nombre": "Scarlet",
+            "Apellido": "Albornoz",
+            "Admin": true,
+            "Email": "smichelle05a@gmail.com"
+        }
+    }
+}

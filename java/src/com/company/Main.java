@@ -137,7 +137,7 @@ public class Main {
         //System.out.println("Mi usuario es " + usuario);
 
         // if con entrada de datos
-
+    /*
         Scanner entrada = new Scanner(System.in);
         int numero = entrada.nextInt();
 
@@ -177,7 +177,99 @@ public class Main {
         while(w <= 10) {
             System.out.println(numero + " x " + w + " = " + (w * numero));
             w++;
-        }
-    }
+        }*/
+        /* Revisar este código
 
+        int nroDia = 5;
+        String dia;
+        String tipo;
+
+        switch (nroDia){
+            case 1:
+                dia = "Lunes";
+                break;
+            case 2:
+                dia = "Martes";
+                break;
+            case 3:
+                dia = "Miércoles";
+                break;
+            case 4:
+                dia = "Jueves";
+                break;
+            case 5:
+                dia = "Viernes";
+                break;
+            case 6:
+                dia = "Sábado";
+                break;
+            case 7:
+                dia = "Domingo";
+                break;
+            default:
+                dia: "día inválido";
+        }
+
+        switch (nroDia) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                tipo: "Día de semana";
+            case 6:
+            case 7:
+                tipo: "Fin de semana";
+            default:
+                tipo: "día inválido";
+        }
+
+        System.out.println(dia + " es un " + tipo);*/
+
+        Scanner sc = new Scanner(System.in);
+        int nroUno;
+        int nroDos;
+
+        System.out.println("Ingrese un número: ");
+        nroUno = sc.nextInt();
+        System.out.println("Ingrese otro número: ");
+        nroDos = sc.nextInt();
+
+        System.out.println("La suma es: " + (nroUno+nroDos));
+
+        System.out.println("------------- Operadores Aritméticos -------------");
+
+        int num1 = 10, num2 = 5, num3, num4, num5, num6;
+        String str1 = "Hola", str = "Chau";
+
+        // Operador + y -
+        System.out.println("num1 + num2 = " + (num1 + num2));
+        System.out.println("num1 - num2 = " + (num1 - num2));
+
+        // Operador * y /
+        System.out.println("num1 * num2 = " + (num1 * num2));
+        System.out.println("num1 / num2 = " + (num1 / num2));
+
+        // Operador %
+        System.out.println("num1 % num2 = " + (num1 % num2));
+
+        System.out.println("------------- Operadores unarios -------------");
+        boolean condicion = true;
+
+        // operador de pre-incremento: se incrementa el valor y luego se calcula el resultado
+        num3 = ++num1;
+        System.out.println("Valor de num3: " + num3);
+
+        // operador de post-incremento = primero calcula el resultado y después incrementa
+        num4 = num2++;
+        System.out.println("Valor de num4: " + num4);
+
+        // operador de pre-decremento: primero disminuye el valor y después calcula el resultado
+        num5= --num3;
+        System.out.println("Valor de num5: " + num5);
+
+        // operador de post.decremento: primero calcula el resultado y después se disminuye
+        num6 = num4--;
+        System.out.println("Valor de num6: " + num6);
+    }
 }
