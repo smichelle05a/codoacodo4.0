@@ -1,8 +1,17 @@
 let nav = document.querySelectorAll('.navegation');
-let activeSection = "";
-
 let section = () => {
-    activeSection = document.querySelector(window.location.hash);
+    let sect = '';
+    if (window.location.hash == "") {
+        sect = '#home';
+    } else {
+        sect = window.location.hash;
+    }
+    return sect; 
+}
+let activeSection = document.querySelector(section());
+
+
+let sectionSelect = () => {
     activeSection.classList.remove('d-none');
     for (let i of nav) {
         i.addEventListener('click', (e) => {
@@ -11,11 +20,7 @@ let section = () => {
             activeSection.classList.remove('d-none');
         });
     }
-    if (window.location.hash == "") {
-        activeSection = document.querySelector('#home');
-        activeSection.classList.remove('d-none');
-    }
 }
 
-section();
+sectionSelect();
 
