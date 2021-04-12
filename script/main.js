@@ -1,16 +1,21 @@
-let nav = document.getElementsByClassName('navegation');
-let navActive = document.getElementsByClassName('active');
-let activeSection = document.getElementById('home')
+let nav = document.querySelectorAll('.navegation');
+let activeSection = "";
 
-console.log(nav)
-
-for (let i of nav) {
-    i.addEventListener('click', (e) => {
-        activeSection.classList.add('d-none');
-        console.log(e.target.hash);
-        activeSection = document.querySelector(e.target.hash);
-        console.log(activeSection);
+let section = () => {
+    activeSection = document.querySelector(window.location.hash);
+    activeSection.classList.remove('d-none');
+    for (let i of nav) {
+        i.addEventListener('click', (e) => {
+            activeSection.classList.add('d-none');
+            activeSection = document.querySelector(e.target.hash);
+            activeSection.classList.remove('d-none');
+        });
+    }
+    if (window.location.hash == "") {
+        activeSection = document.querySelector('#home');
         activeSection.classList.remove('d-none');
-    });
+    }
 }
+
+section();
 
