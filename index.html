@@ -6,173 +6,374 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Codo a Codo 4.0</title>
   <link rel="icon" href="./img/favicon1.png" />
-  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
   <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
-
 </head>
 
 <body class="d-flex flex-column h-100">
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Codo a Codo 4.0</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active navegation" aria-current="page" href="#home">Home</a>
+          <a type="button" href="#home" class="navbar-brand nav-link btn btn-dark navegation"><img src="./img/favicon1.png" width="30" height="30" alt="codo a codo logo"></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+            <li class="nav-item mx-1 flex-grow-1">
+              <a type="button" href="#home" class="nav-link btn btn-dark navegation">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#html5" role="button"
-                aria-expanded="false">HTML5</a>
+            <li class="btn-group nav-item mx-1 flex-grow-1">
+              <a type="button" href="#html5" class="nav-link btn btn-dark navegation">HTML 5</a>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item navegation" href="#html5">HTML 5 Home</a>
+                  <a class="dropdown-item navegation" href="#html-obligatorio-1">HTML Obligatorio 1</a>
                 </li>
                 <li>
-                  <a class="dropdown-item navegation" href="#html-obligatorio-1">Ejercicio Obligatorio 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item navegation" href="#html-obligatorio-2">Ejercicio Obligatorio 2</a>
-                  <!-- </li>
-                    <hr class="dropdown-divider">
-                  </li> -->
+                  <a class="dropdown-item navegation" href="#html-obligatorio-2">HTML Obligatorio 2</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">CSS3</a>
+            <li class="btn-group nav-item mx-1 flex-grow-1">
+              <a type="button" href="#css3" class="nav-link btn btn-dark navegation">CSS 3</a>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item navegation" href="#css-obligatorio-1">CSS Obligatorio 1</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bootstrap</a>
+            <li class="btn-group nav-item mx-1 flex-grow-1">
+              <a type="button" href="#bootstrap" class="nav-link btn btn-dark navegation disabled">Bootstrap</a>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link disabled" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item navegation" href="#">Bootstrap Obligatorio 1</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Javascript</a>
+            <li class="btn-group nav-item mx-1 flex-grow-1">
+              <a type="button" href="#javascript" class="nav-link btn btn-dark navegation disabled">JavaScript</a>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link disabled" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item navegation" href="#">JavaScript Obligatorio 1</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Git</a>
+            <li class="nav-item mx-1 flex-grow-1">
+              <a type="button" href="#git" class="nav-link btn btn-dark navegation disabled">Git</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Scrum</a>
+            <li class="nav-item mx-1 flex-grow-1">
+              <a type="button" href="#scrum" class="nav-link btn btn-dark navegation disabled">Scrum</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Arquitectura</a>
+            <li class="nav-item mx-1 flex-grow-1">
+              <a type="button" href="#arquitectura" class="nav-link btn btn-dark navegation disabled">Arquitectura</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Base de Datos</a>
+            <li class="nav-item mx-1 flex-grow-1">
+              <a type="button" href="#ddbb" class="nav-link btn btn-dark navegation disabled">Bases de Datos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Node.Js</a>
+            <li class="nav-item mx-1 flex-grow-1">
+              <a type="button" href="#nodejs" class="nav-link btn btn-dark navegation disabled">Node.js</a>
             </li>
           </ul>
-          <!-- <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
+          <!-- <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form> -->
         </div>
       </div>
     </nav>
   </header>
-  <main class="mt-4 mb-5 py-5">
-    <div class="px-4 pt-4 my-4 text-center d-none" id="home">
+  <main class="overflow-auto mb-4 pb-4">
+    <div class="px-4 pt-4 my-4 text-center d-none animate__animated" id="home">
       <h1 class="display-4 fw-bold">Codo a Codo 4.0</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Ejercicios y clases de Codo a Codo 4.0</p>
       </div>
       <div class="container">
-        <img src="./img/js.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Javascript image" width="600" loading="lazy"/>
+        <img src="./img/js.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 align-items-stretch w-50"
+          alt="Javascript image" loading="lazy" />
       </div>
     </div>
-    <div class="container d-none" id="html5">
+    <div class="container d-none animate__animated" id="html5">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/HTML5_logo.png" class="d-block mx-lg-auto img-fluid" alt="HTML5_logo" width="380" height="380" loading="lazy"/>
+            <img src="./img/HTML5_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="HTML5_logo" loading="lazy" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 text-center">
             <h1 class="display-5 fw-bold lh-1 mb-3">HTML 5</h1>
             <p class="lead">
-              Introducción a las tecnologías de la web, etiquetas, formularios y más.
+              Es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container d-none" id="html-obligatorio-1">
-      <h2 class="text-center">Ejercicio Obligatorio 1</h2>
-      <hr/>
-      <div class="container">
-        <h4 class="text-center text-decoration-underline b">
-          Recetas de Cocina
-        </h4>
-        <br/>
-        <div class="card mb-3">
-          <div class="card-header text-center h4">Red Velvet Cupcakes</div>
-          <img src="./img/red_velvet_cupcakes.jpg" alt="Red Velvet Cupcakes" width="500" class="rounded mx-auto d-block img-fluid" />
-          <div class="card-body">
-            <p class="card-text">
-              <small class="text-muted">
-                <b>Ingredientes:</b>
-                <ul>
-                  <li>55g de mantequilla</li>
-                  <li>150g de azúcar</li>
-                  <li>1 huevo</li>
-                  <li>1 cucharada de cacao sin azúcar</li>
-                  <li>1/4 de cucharadita de colorante en pasta rojo</li>
-                  <li>1 cucharadita de extracto de vainilla</li>
-                  <li>120ml de buttermilk</li>
-                  <li>150g de harina</li>
-                  <li>1/2 cucharadita de bicarbonato de soda</li>
-                  <li>1 cucharadita de vinagre blanco</li>
-                </ul>
-              </small>
-            </p>
-            <div class="card-text justify">
-              <p>
-                Precalentamos el horno a 170º y preparamos los papelitos para cupcakes en el molde. Tamizamos la harina con el cacao y apartamos. Con la batidora, batimos el azúcar con la mantequilla en un bol. Sin dejar de batir añadimos el huevo y el extracto de vainilla.
+    <div class="container d-none animate__animated" id="html-obligatorio-1">
+      <div class="container col-xxl-8 px-4 py-3">
+        <h2 class="text-center">HTML Obligatorio 1</h2>
+        <hr />
+        <div class="container">
+          <h4 class="text-center text-decoration-underline b">
+            Recetas de Cocina
+          </h4>
+          <br />
+          <div class="card mb-3">
+            <div class="card-header text-center h4">Red Velvet Cupcakes</div>
+            <img src="./img/red_velvet_cupcakes.jpg" alt="Red Velvet Cupcakes" width="500"
+              class="rounded mx-auto d-block img-fluid" />
+            <div class="card-body">
+              <p class="card-text">
+                <small class="text-muted">
+                  <b>Ingredientes:</b>
+                  <ul>
+                    <li>55g de mantequilla</li>
+                    <li>150g de azúcar</li>
+                    <li>1 huevo</li>
+                    <li>1 cucharada de cacao sin azúcar</li>
+                    <li>1/4 de cucharadita de colorante en pasta rojo</li>
+                    <li>1 cucharadita de extracto de vainilla</li>
+                    <li>120ml de buttermilk</li>
+                    <li>150g de harina</li>
+                    <li>1/2 cucharadita de bicarbonato de soda</li>
+                    <li>1 cucharadita de vinagre blanco</li>
+                  </ul>
+                </small>
               </p>
-              <p>
-                A continuación, añadimos la mitad de la harina(+ cacao) y el buttermilk <i><small>(si no tenéis buttermilk en el super, podéis prepararla mezclando 120ml de leche con 1/2 cucharada de zumo de limón. Esperais 5 minutos y ya tenéis la leche cortada semejante al buttermilk)</small></i>. Después incorporamos el resto de la harina.
-              </p>
-              <p>
-                Cuando la mezcla sea homogénea, añadimos el colorante rojo. Así, podemos ajustar la cantidad necesaria para lograr la intensidad deseada. Finalmente, en un vasito, mezclamos el vinagre con el bicarbonato de soda y cuando burbujee lo añadimos a la mezcla anterior. Repartimos la mezcla en los moldes y horneamos durante 20 minutos o hasta que un palillo salga limpio. Los sacamos del horno y los dejamos enfriar 5 minutos en el molde y luego por completo sobre una rejilla.
-              </p>
+              <div class="card-text justify">
+                <p>
+                  Precalentamos el horno a 170º y preparamos los papelitos para cupcakes en el molde. Tamizamos la
+                  harina
+                  con el cacao y apartamos. Con la batidora, batimos el azúcar con la mantequilla en un bol. Sin dejar
+                  de
+                  batir añadimos el huevo y el extracto de vainilla.
+                </p>
+                <p>
+                  A continuación, añadimos la mitad de la harina(+ cacao) y el buttermilk <i><small>(si no tenéis
+                      buttermilk en el super, podéis prepararla mezclando 120ml de leche con 1/2 cucharada de zumo de
+                      limón. Esperais 5 minutos y ya tenéis la leche cortada semejante al buttermilk)</small></i>.
+                  Después
+                  incorporamos el resto de la harina.
+                </p>
+                <p>
+                  Cuando la mezcla sea homogénea, añadimos el colorante rojo. Así, podemos ajustar la cantidad necesaria
+                  para lograr la intensidad deseada. Finalmente, en un vasito, mezclamos el vinagre con el bicarbonato
+                  de
+                  soda y cuando burbujee lo añadimos a la mezcla anterior. Repartimos la mezcla en los moldes y
+                  horneamos
+                  durante 20 minutos o hasta que un palillo salga limpio. Los sacamos del horno y los dejamos enfriar 5
+                  minutos en el molde y luego por completo sobre una rejilla.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container d-none text-center form-signin" id="html-obligatorio-2">
-      <form class="container my-4 px-5 col-6 mx-auto">
-        <img class="mb-4 mx-auto" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt="" width="72" height="72 "/>
-        <h1 class="h3 mb-3 fw-normal">Inicie Sesión</h1>
-        <div class="form-floating my-4">
-          <input type="number" class="form-control" id="dni" placeholder="12345678"/>
-          <label for="dni">DNI</label>
+    <div class="container d-none text-center form-signin animate__animated" id="html-obligatorio-2">
+      <div class="container col-xxl-8 px-4 py-3">
+        <h2 class="text-center">HTML Obligatorio 2</h2>
+        <hr />
+        <form class="container px-5 col-6 mx-auto">
+          <img class="mb-2 mx-auto" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt=""
+            width="72" height="72 " />
+          <h1 class="h3 mb-1 fw-normal">Inicie Sesión</h1>
+          <div class="form-floating my-3">
+            <input type="number" class="form-control" id="dni" placeholder="12345678" />
+            <label for="dni">DNI</label>
+          </div>
+          <div class="form-floating my-3">
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario" />
+            <label for="usuario">Usuario</label>
+          </div>
+          <div class="form-floating my-3">
+            <input type="contraseña" class="form-control" id="contraseña" placeholder="Contraseña" />
+            <label for="contraseña">Contraseña</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">
+            Ingresar
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="css3">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/CSS3_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="CSS3_logo" loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">CSS 3</h1>
+            <p class="lead">
+              En español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la
+              presentación de un documento estructurado escrito en un lenguaje de marcado.
+            </p>
+          </div>
         </div>
-        <div class="form-floating my-4">
-          <input type="text" class="form-control" id="usuario" placeholder="Usuario" />
-          <label for="usuario">Usuario</label>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="css-obligatorio-1">
+      <div class="container col-xxl-8 px-4 py-3">
+        <h2 class="text-center">CSS Obligatorio 1</h2>
+        <hr />
+        <div class="container-ejercicio">
+          <div class="box">
+            uno
+          </div>
+          <div class="box">
+            dos
+          </div>
+          <div class="box">
+            tres
+          </div>
+          <div class="box">
+            cuatro
+          </div>
         </div>
-        <div class="form-floating my-4">
-          <input type="contraseña" class="form-control" id="contraseña" placeholder="Contraseña"/>
-          <label for="contraseña">Contraseña</label>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="bootstrap">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/bootstrap_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="bootstrap_logo"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Bootstrap</h1>
+            <p class="lead">
+              Es una biblioteca multiplataforma que contiene plantillas de diseño con tipografía, formularios, botones,
+              cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de
+              JavaScript adicionales.
+            </p>
+          </div>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">
-          Ingresar
-        </button>
-      </form>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="javascript">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/javascript_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="javascript_logo"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">JavaScript</h1>
+            <p class="lead">
+              Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a
+              objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="git">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/git_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="git_logo" loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Git</h1>
+            <p class="lead">
+              Es un software de control de versiones pensando en la eficiencia, la confiabilidad y compatibilidad del
+              mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código
+              fuente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="scrum">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/scrum_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="scrum_logo" loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Scrum</h1>
+            <p class="lead">
+              Es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar
+              colaborativamente, en equipo y obtener el mejor resultado posible de proyectos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="arquitectura">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/arquitectura_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="arquitectura_logo"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Arquitectura</h1>
+            <p class="lead">
+              La arquitectura de servidores, se refiere a la arquitectura de una red informática en la que muchos
+              procesadores remotos, conocidos como “clientes” solicitan y reciben servicio de un sistema centralizado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="ddbb">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/MySQL_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="MySQL_logo" loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Bases de Datos</h1>
+            <p class="lead">
+              Es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su
+              posterior uso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none animate__animated" id="nodejs">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img src="./img/Nodejs_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="Nodejs_logo"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Node.js</h1>
+            <p class="lead">
+              Ideado como un entorno de ejecución de JavaScript orientado a eventos asíncronos, Node.js está diseñado
+              para crear aplicaciones network escalables.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="footer mt-auto py-2 bg-dark fixed-bottom">
-    <div class="container">
+    <div class="container text-center">
       <span class="text-muted">Scarlet Albornoz 2021</span>
     </div>
   </footer>
   <script src="./script/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/less/dist/less.js"></script>
   <script src="./script/main.js"></script>
 </body>
 
