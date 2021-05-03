@@ -60,7 +60,7 @@ let sectionSelect = () => {
             }
             setTimeout(() => {
                 animateIn(activeSection, 'fadeIn');
-            }, 1000);
+            }, 500);
         });
     }
 }
