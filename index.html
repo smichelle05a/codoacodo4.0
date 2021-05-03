@@ -20,76 +20,80 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <a type="button" href="#home" class="navbar-brand nav-link btn btn-dark navegation"><img src="./img/favicon1.png" width="30" height="30" alt="codo a codo logo"></a>
+          <a type="button" href="#home" class="navbar-brand nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><img src="./img/favicon1.png" width="30" height="30" alt="codo a codo logo"></a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
-            <li class="nav-item mx-1 flex-grow-1">
-              <a type="button" href="#home" class="nav-link btn btn-dark navegation">Home</a>
+            <li class="nav-item mx-1">
+              <a type="button" href="#home" class="nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
             </li>
-            <li class="btn-group nav-item mx-1 flex-grow-1">
-              <a type="button" href="#html5" class="nav-link btn btn-dark navegation">HTML 5</a>
-              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#html5" role="button" aria-expanded="false">HTML5</a>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item navegation" href="#html-obligatorio-1">HTML Obligatorio 1</a>
+                  <a class="dropdown-item navegation" href="#html5" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">HTML5 Home</a>
                 </li>
                 <li>
-                  <a class="dropdown-item navegation" href="#html-obligatorio-2">HTML Obligatorio 2</a>
+                  <a class="dropdown-item navegation" href="#html-obligatorio-1" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">HTML Obligatorio 1</a>
                 </li>
-              </ul>
-            </li>
-            <li class="btn-group nav-item mx-1 flex-grow-1">
-              <a type="button" href="#css3" class="nav-link btn btn-dark navegation">CSS 3</a>
-              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item navegation" href="#css-obligatorio-1">CSS Obligatorio 1</a>
+                  <a class="dropdown-item navegation" href="#html-obligatorio-2" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">HTML Obligatorio 2</a>
                 </li>
               </ul>
             </li>
-            <li class="btn-group nav-item mx-1 flex-grow-1">
-              <a type="button" href="#bootstrap" class="nav-link btn btn-dark navegation disabled">Bootstrap</a>
-              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link disabled" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#css3" role="button" aria-expanded="false">CSS3</a>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item navegation" href="#">Bootstrap Obligatorio 1</a>
+                  <a class="dropdown-item navegation" href="#css3" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">CSS3 Home</a>
+                </li>
+                <li>
+                  <a class="dropdown-item navegation" href="#css-obligatorio-1" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">CSS Obligatorio 1</a>
                 </li>
               </ul>
             </li>
-            <li class="btn-group nav-item mx-1 flex-grow-1">
-              <a type="button" href="#javascript" class="nav-link btn btn-dark navegation disabled">JavaScript</a>
-              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split nav-link disabled" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#bootstrap" role="button"
+                aria-expanded="false">Bootstrap</a>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item navegation" href="#">JavaScript Obligatorio 1</a>
+                  <a class="dropdown-item navegation" href="#bootstrap" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">Bootstrap Home</a>
+                </li>
+                <li>
+                  <a class="dropdown-item navegation" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Bootstrap Obligatorio 1</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item mx-1 flex-grow-1">
-              <a type="button" href="#git" class="nav-link btn btn-dark navegation disabled">Git</a>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#javascript" role="button"
+                aria-expanded="false">JavaScript</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item navegation" href="#javascript" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">JavaScript Home</a>
+                </li>
+                <li>
+                  <a class="dropdown-item navegation" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">JavaScript Obligatorio 1</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item mx-1 flex-grow-1">
-              <a type="button" href="#scrum" class="nav-link btn btn-dark navegation disabled">Scrum</a>
+            <li class="nav-item mx-1">
+              <a type="button" href="#git" class="nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Git</a>
             </li>
-            <li class="nav-item mx-1 flex-grow-1">
-              <a type="button" href="#arquitectura" class="nav-link btn btn-dark navegation disabled">Arquitectura</a>
+            <li class="nav-item mx-1">
+              <a type="button" href="#scrum" class="nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Scrum</a>
             </li>
-            <li class="nav-item mx-1 flex-grow-1">
-              <a type="button" href="#ddbb" class="nav-link btn btn-dark navegation disabled">Bases de Datos</a>
+            <li class="nav-item mx-1">
+              <a type="button" href="#arquitectura" class="nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Arquitectura</a>
             </li>
-            <li class="nav-item mx-1 flex-grow-1">
-              <a type="button" href="#nodejs" class="nav-link btn btn-dark navegation disabled">Node.js</a>
+            <li class="nav-item mx-1">
+              <a type="button" href="#ddbb" class="nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Bases de Datos</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a type="button" href="#nodejs" class="nav-link navegation" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Node.js</a>
             </li>
           </ul>
           <!-- <form>
@@ -106,15 +110,14 @@
         <p class="lead mb-4">Ejercicios y clases de Codo a Codo 4.0</p>
       </div>
       <div class="container">
-        <img src="./img/js.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 align-items-stretch w-50"
-          alt="Javascript image" loading="lazy" />
+        <img src="./img/js.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 align-items-stretch" alt="Javascript image" id='homeImg' loading="lazy" />
       </div>
     </div>
     <div class="container d-none animate__animated" id="html5">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/HTML5_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="HTML5_logo" loading="lazy" />
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/HTML5_logo.png" class="d-block mx-auto img-fluid w-75" alt="HTML5_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
             <h1 class="display-5 fw-bold lh-1 mb-3">HTML 5</h1>
@@ -190,7 +193,7 @@
       <div class="container col-xxl-8 px-4 py-3">
         <h2 class="text-center">HTML Obligatorio 2</h2>
         <hr />
-        <form class="container px-5 col-6 mx-auto">
+        <form class="container px-5 col-lg-6 col-md-8 col-sm-12 mx-auto">
           <img class="mb-2 mx-auto" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt=""
             width="72" height="72 " />
           <h1 class="h3 mb-1 fw-normal">Inicie Sesión</h1>
@@ -215,8 +218,8 @@
     <div class="container d-none animate__animated" id="css3">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/CSS3_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="CSS3_logo" loading="lazy" />
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/CSS3_logo.png" class="d-block mx-auto img-fluid w-75" alt="CSS3_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
             <h1 class="display-5 fw-bold lh-1 mb-3">CSS 3</h1>
@@ -251,8 +254,8 @@
     <div class="container d-none animate__animated" id="bootstrap">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/bootstrap_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="bootstrap_logo"
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/bootstrap_logo.png" class="d-block mx-auto img-fluid w-75" alt="bootstrap_logo"
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
@@ -269,8 +272,8 @@
     <div class="container d-none animate__animated" id="javascript">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/javascript_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="javascript_logo"
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/javascript_logo.png" class="d-block mx-auto img-fluid w-75" alt="javascript_logo"
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
@@ -286,8 +289,8 @@
     <div class="container d-none animate__animated" id="git">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/git_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="git_logo" loading="lazy" />
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/git_logo.png" class="d-block mx-auto img-fluid w-75" alt="git_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
             <h1 class="display-5 fw-bold lh-1 mb-3">Git</h1>
@@ -303,8 +306,8 @@
     <div class="container d-none animate__animated" id="scrum">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/scrum_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="scrum_logo" loading="lazy" />
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/scrum_logo.png" class="d-block mx-auto img-fluid w-75" alt="scrum_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
             <h1 class="display-5 fw-bold lh-1 mb-3">Scrum</h1>
@@ -319,8 +322,8 @@
     <div class="container d-none animate__animated" id="arquitectura">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/arquitectura_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="arquitectura_logo"
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/arquitectura_logo.png" class="d-block mx-auto img-fluid w-75" alt="arquitectura_logo"
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
@@ -336,8 +339,8 @@
     <div class="container d-none animate__animated" id="ddbb">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/MySQL_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="MySQL_logo" loading="lazy" />
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/MySQL_logo.png" class="d-block mx-auto img-fluid w-75" alt="MySQL_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
             <h1 class="display-5 fw-bold lh-1 mb-3">Bases de Datos</h1>
@@ -352,8 +355,8 @@
     <div class="container d-none animate__animated" id="nodejs">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-12 col-lg-6">
-            <img src="./img/Nodejs_logo.png" class="d-block mx-lg-auto img-fluid w-75" alt="Nodejs_logo"
+          <div class="col-10 col-sm-12 col-lg-6 mx-auto">
+            <img src="./img/Nodejs_logo.png" class="d-block mx-auto img-fluid w-75" alt="Nodejs_logo"
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">

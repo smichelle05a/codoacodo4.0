@@ -53,13 +53,11 @@ let sectionSelect = () => {
     for (let i of nav) {
         i.addEventListener('click', (e) => {
             animateOut(activeSection, 'fadeOut');
-            console.log(activeSection);
             if (document.querySelector(e.target.hash) == null) {
                 activeSection = document.querySelector('#home')
             } else {
                 activeSection = document.querySelector(e.target.hash);
             }
-            console.log(activeSection)
             setTimeout(() => {
                 animateIn(activeSection, 'fadeIn');
             }, 1000);
@@ -68,4 +66,5 @@ let sectionSelect = () => {
 }
 
 sectionSelect();
+
 
