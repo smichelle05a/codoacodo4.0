@@ -8,7 +8,7 @@
   <link rel="icon" href="./img/favicon1.png" />
   <link href="./css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -82,6 +82,10 @@
                 <li>
                   <a class="dropdown-item navegation" href="#js-obligatorio-1" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">JavaScript Obligatorio 1</a>
                 </li>
+                <li>
+                  <a class="dropdown-item navegation" href="#js-obligatorio-2" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">JavaScript Obligatorio 2</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item mx-1">
@@ -124,7 +128,7 @@
             <img src="./img/HTML5_logo.png" class="d-block mx-auto img-fluid w-75" alt="HTML5_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">HTML 5</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">HTML 5</h2>
             <p class="lead">
               Es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML.
             </p>
@@ -200,7 +204,7 @@
         <form class="container px-5 col-lg-6 col-md-8 col-sm-12 mx-auto">
           <img class="mb-2 mx-auto" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt=""
             width="72" height="72 " />
-          <h1 class="h3 mb-1 fw-normal">Inicie Sesión</h1>
+          <h2 class="h3 mb-1 fw-normal">Inicie Sesión</h2>
           <div class="form-floating my-3">
             <input type="number" class="form-control" id="dni" placeholder="12345678" />
             <label for="dni">DNI</label>
@@ -226,7 +230,7 @@
             <img src="./img/CSS3_logo.png" class="d-block mx-auto img-fluid w-75" alt="CSS3_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">CSS 3</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">CSS 3</h2>
             <p class="lead">
               En español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la
               presentación de un documento estructurado escrito en un lenguaje de marcado.
@@ -263,7 +267,7 @@
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Bootstrap</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Bootstrap</h2>
             <p class="lead">
               Es una biblioteca multiplataforma que contiene plantillas de diseño con tipografía, formularios, botones,
               cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de
@@ -417,7 +421,7 @@
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">JavaScript</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">JavaScript</h2>
             <p class="lead">
               Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a
               objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
@@ -431,8 +435,16 @@
         <h2 class="text-center">JavaScript Obligatorio 1</h2>
         <hr />
         <div class="text-center">
-          <h1>El resultado de la suma de las dos variables es:</h1>
+          <h2>El resultado de la suma de las dos variables es:</h2>
           <h2 id="resultado"></h2>
+        </div>
+      </div>
+    </section>
+    <section class="container d-none animate__animated" id="js-obligatorio-2">
+      <div class="container col-xxl-8 px-4 py-3">
+        <h2 class="text-center">JavaScript Obligatorio 2</h2>
+        <hr />
+        <div class="d-flex flex-row mt-5 justify-content-evenly" id="tablas-multiplicar">
         </div>
       </div>
     </section>
@@ -443,7 +455,7 @@
             <img src="./img/git_logo.png" class="d-block mx-auto img-fluid w-75" alt="git_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Git</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Git</h2>
             <p class="lead">
               Es un software de control de versiones pensando en la eficiencia, la confiabilidad y compatibilidad del
               mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código
@@ -460,7 +472,7 @@
             <img src="./img/scrum_logo.png" class="d-block mx-auto img-fluid w-75" alt="scrum_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Scrum</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Scrum</h2>
             <p class="lead">
               Es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar
               colaborativamente, en equipo y obtener el mejor resultado posible de proyectos.
@@ -477,7 +489,7 @@
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Arquitectura</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Arquitectura</h2>
             <p class="lead">
               La arquitectura de servidores, se refiere a la arquitectura de una red informática en la que muchos
               procesadores remotos, conocidos como “clientes” solicitan y reciben servicio de un sistema centralizado.
@@ -493,7 +505,7 @@
             <img src="./img/MySQL_logo.png" class="d-block mx-auto img-fluid w-75" alt="MySQL_logo" loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Bases de Datos</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Bases de Datos</h2>
             <p class="lead">
               Es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su
               posterior uso.
@@ -510,7 +522,7 @@
               loading="lazy" />
           </div>
           <div class="col-lg-6 text-center">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Node.js</h1>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Node.js</h2>
             <p class="lead">
               Ideado como un entorno de ejecución de JavaScript orientado a eventos asíncronos, Node.js está diseñado
               para crear aplicaciones network escalables.
@@ -526,9 +538,9 @@
     </div>
   </footer>
   <script src="./script/bootstrap.bundle.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
   <script src="./script/main.js"></script>
   <script src="./script/js-obligatorio-1.js"></script>
+  <script src="./script/js-obligatorio-2.js"></script>
 </body>
 
 </html>

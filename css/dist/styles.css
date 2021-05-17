@@ -1,0 +1,47 @@
+#css-obligatorio-1 .container {
+  height: 80vh;
+}
+#css-obligatorio-1 .container-ejercicio {
+  font-size: 1.5rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+#css-obligatorio-1 .box {
+  align-items: stretch;
+  background-color: red;
+  color: yellow;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  height: 8rem;
+  width: 8rem;
+}
+#css-obligatorio-1 .container :nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+#homeImg {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  #homeImg {
+    max-width: 75%;
+  }
+}
+@media (max-width: 576px) {
+  #homeImg {
+    max-width: 100%;
+  }
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 0.5s;
+}
+
+.animate__animated.animate__fadeOut {
+  --animate-duration: 0.5s;
+}
