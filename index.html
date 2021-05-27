@@ -86,6 +86,14 @@
                   <a class="dropdown-item navegation" href="#js-obligatorio-2" data-bs-toggle="collapse"
                     data-bs-target=".navbar-collapse.show">JavaScript Obligatorio 2</a>
                 </li>
+                <li>
+                  <a class="dropdown-item navegation" href="#js-obligatorio-3" target="_blank" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">JavaScript Obligatorio 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item navegation" href="#js-obligatorio-4" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">JavaScript Obligatorio 4</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item mx-1">
@@ -202,7 +210,7 @@
         <h2 class="text-center">HTML Obligatorio 2</h2>
         <hr />
         <form class="container px-5 col-lg-6 col-md-8 col-sm-12 mx-auto">
-          <img class="mb-2 mx-auto" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt=""
+          <img class="mb-2 mx-auto" src="./img/avatardefault.png" alt=""
             width="72" height="72 " />
           <h2 class="h3 mb-1 fw-normal">Inicie Sesión</h2>
           <div class="form-floating my-3">
@@ -448,6 +456,40 @@
         </div>
       </div>
     </section>
+    <section class="container d-none animate__animated" id="js-obligatorio-3">
+      <div class="container col-xxl-8 px-4 py-3">
+        <h2 class="text-center">JavaScript Obligatorio 3</h2>
+        <hr />
+        <div class="ratio" style="--bs-aspect-ratio: 40%;">
+          <iframe src="https://smichelle05a.github.io/js-obligatorio-3/" class="container-fluid" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="container animate__animated d-none" id="js-obligatorio-4">
+      <div class="container col-xxl-8 px-4 py-3">
+        <h2 class="text-center">JavaScript Obligatorio 4</h2>
+        <hr />
+        <div class="container text-center form-signin">
+          <form class="container my-4 px-5 col-6 mx-auto">
+            <img class="mb-4 mx-auto" src="./img/avatardefault.png" alt="" width="72" height="72 " />
+            <h1 class="h3 mb-3 fw-normal">Inicie Sesión</h1>
+            <div class="form-floating my-4">
+              <input type="text" class="form-control" id="user" placeholder="Usuario" />
+              <label for="user">Usuario </label>
+              <span id="user-validation" class="fw-bold"></span>
+            </div>
+            <div class="form-floating my-4">
+              <input type="password" class="form-control" id="password" placeholder="Contraseña" />
+              <label for="password">Contraseña</label>
+              <span id="password-validation" class="fw-bold"></span>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" id="btn">
+              Ingresar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
     <section class="container d-none animate__animated" id="git">
       <div class="container col-xxl-8 px-4 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -541,6 +583,7 @@
   <script src="./script/main.js"></script>
   <script src="./script/js-obligatorio-1.js"></script>
   <script src="./script/js-obligatorio-2.js"></script>
+  <script src="./script/js-obligatorio-4.js"></script>
 </body>
 
 </html>
